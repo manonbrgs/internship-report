@@ -8,7 +8,7 @@ Website showcasing my year-end internship report
 
 This project is hosted on my portfolio website. You can view the working version here:
 
-<a href="https://manonbourges.me/demos/beeyondauto/vue/pages/index.php](https://manonbourges.me/demos/internship-report/index.html">Live Demo</a>
+<a href="https://manonbourges.me/demos/internship-report/index.html">Live Demo</a>
 
 ### Technologies Used
 
