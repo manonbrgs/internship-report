@@ -1,4 +1,4 @@
-# internship-report
+# Internship report website
 
 ### Description
 Website showcasing my year-end internship report
