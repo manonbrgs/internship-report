@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Manon Bourgès - Rapport de stage</title>
+		<link id="favicon" rel="shortcut icon" href="assets/images/favicon-night.png">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<script src="assets/js/jquery-3.6.1.min.js"></script>
+		<script src="assets/js/script.js"></script>
+		<!--Tooltips-->
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
+		<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+		<!--Swiper timeline-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+		<!--Icons-->
+		<link rel="stylesheet" href="https://static.tumblr.com/svdghan/wUSr83npl/tempcf.css">
+		<link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	</head>
+
+	<body>
+		<!--Credits popup-->
+		<div id="pop"><div class="fade"></div>
+    		<div class="popup">
+       			<div class="credits-title">
+					<i class='bx bx-message-edit'></i><h3>Crédits code</h3>
+				</div>
+				<table>
+  					<tr>
+    					<td>Popup</td>
+						<td><a href="http://odeysseus.tumblr.com/">odeysseus</a></td>
+  					</tr>
+					<tr>
+    					<td>Timeline "Mon parcours"</td>
+						<td><a href="https://swiperjs.com/">Swiper JS</a></td>
+  					</tr>
+					<tr>
+    					<td>Mode jour/nuit</td>
+						<td><a href="https://egg.design/">eggdesign</a></td>
+  					</tr>
+				</table>
+				<div class="credits-title">
+					<i class='bx bx-message-edit'></i><h3>Crédits icônes</h3>
+				</div>
+				<table>
+  					<tr>
+    					<td>Icônes <a href="https://fontawesome.com/icons/copyright?s=solid&f=classic">copyright</a> et <a href="https://fontawesome.com/icons/moon?s=solid&f=classic">lune</a></td>
+						<td><a href="https://fontawesome.com/">Font Awesome de Dave Gandy</a></td>
+  					</tr>
+					<tr>
+    					<td>Icônes menu principal, en-têtes des conteneurs, enveloppe, localisation, flèche retour haut de page, planète, note de musique, livre</td>
+						<td><a href="https://cappuccicons.com/">Cappuccicons de Sol Rainha</a></td>
+  					</tr>
+					<tr>
+    					<td>Icônes titres crédits, section "Mon expérience à l'étranger", piano </td>
+						<td><a href="https://boxicons.com/">Boxicons</a></td>
+  					</tr>
+				</table>
+				<div class="credits-title">
+					<i class='bx bx-message-edit'></i><h3>Autres crédits</h3>
+				</div>
+				<table>
+  					<tr>
+    					<td>SVG diagramme circulaire</td>
+						<td>Sergio Pedercini</td>
+  					</tr>
+					<tr>
+    					<td><a href="https://www.freepik.com/free-vector/world-map-business-infographic_5633052.htm">Image carte du monde</a></td>
+						<td>Freepik</td>
+  					</tr>
+				</table>
+    		</div>
+		</div>
+		<!--Side bar content-->
+		<div id="aside">
+			<div>
+				<div id="menu">
+					<a href="cv.html" data-tippy-content="Curriculum Vitae"><i class="cp cp-id-badge"></i></a>
+					<a href="stage.html" data-tippy-content="Rapport de stage"><i class="cp cp-briefcase"></i></a>
+					<a href="#" data-tippy-content="Portfolio"><i class="cp cp-palette"></i></a>
+					<a href="#" data-tippy-content="LinkedIn"><i class="cp cp-linkedin"></i></a>
+				</div>
+				<div id="right">
+					<div id="sidebar-1">
+						<a href="index.html"><img id="logo" class="no-select logo-bg" src="assets/images/logo.png" alt="Logo"></a>
+						<div>
+							<h1>manon</h1>
+							<p><i class="cp cp-location"></i> Bretagne, France</p>
+						</div>
+					</div>
+					<div id="bottom">
+						<div id="sidebar-2">
+							<p>Bienvenue sur mon site personnel. Vous y trouverez toutes sortes d'informations me concernant, allant de mon CV à mon portfolio.</p>
+						</div>
+						<div id="right-btn">
+							<div class="click"><i class="fa-solid fa-copyright"></i></div>
+							<a target="_blank" href="mailto:manon.brges@gmail.com"><i class="cp cp-envelope"></i></a>
+							<div class="daynight"><i class="fa-solid fa-sun"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul id="toc">
+				<li class="active-toc" id="projet">Projet de stage</li>
+				<li id="analyse-du-besoin">Analyse du besoin</li>
+				<li id="veille">Veille technologique</li>
+				<li id="planning">Planning</li>
+				<li id="analyse">Analyse du travail</li>
+			</ul>
+		</div>
+		<!--Right content-->
+		<div class="content projet">
+			<!--Block 1-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-factory"></i>
+					<h2>Structure d'accueil</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						L’entreprise m’accueillant cette année pour mon stage se nomme Crimson Factory. Il s’agit de l’entreprise dans laquelle j’ai effectué mon stage lors de ma première année de DEUST et qui a volontiers accepté de m’intégrer au sein de son équipe lors de ma deuxième et dernière année de formation.
+					</p>
+					<p>
+						Crimson Factory est une petite entreprise de création de sites internet et e-commerce à Limoges. Il s’agit d’une société indépendante dont sont à l’origine ses deux actuels associés gérants, Pierre Bonneau et Steeven Anastase. Comme l’année précédente lors de mon premier stage chez Crimson Factory, j’ai travaillé avec Pierre Bonneau comme maître de stage. Titulaire d’un BTS communication et d’une licence professionnelle Webdesign Sensoriel, son rôle au sein de l’agence est celui de webdesigner et intégrateur web. Il s’occupe également d’établir contact avec les clients pour les accompagner dans leur projet de communication digitale.
+					</p>
+					<p>
+						Crimson Factory est une agence digitale en conseil et communication et s’occupe donc non seulement de l’audit et la création de sites web (sites vitrine ou encore e-boutiques) mais propose également un service de graphisme. L’agence propose ainsi aux clients de créer l’image de leur marque, que ce soit par le biais d’un logo, identité visuelle, charte graphique ou bien encore contenu vidéo. Elle offre également un service de traduction en anglais, italien et allemand.
+					</p>
+					<p>
+						Mes deux premières semaines et demie de stage (du 6 au 22 mars) se sont déroulées à Limoges au sein de l’entreprise, et le reste (du 22 mars au 2 mai) est effectué entièrement en distanciel. Les réunions bihebdomadaires ont lieu les lundis et vendredis matin à partir de 9 h et durent de 30 minutes à 1 h 30. En télétravail, ces réunions se font via Discord et c’est aussi grâce à cette plateforme que j’échange avec l’équipe tout au long de mes journées de travail.
+					</p>
+				</div>
+			</div>
+            <!--Block 2-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-id-badge"></i>
+					<h2>Missions et profil requis</h2>
+				</div>
+				<div class="block-content">
+					<p>Afin d’accompagner Crimson Factory dans ses divers projets, mes principales missions lors de ce stage sont les suivantes :</p>
+					<ul>
+						<li>Développement web sur mesure,</li>
+						<li>Intégration de sites web (boutique, vitrine),</li>
+						<li>Création de maquettes graphiques.</li>
+					</ul>
+					<p>
+						Pour mener à bien ces différentes tâches, je dois donc m’appuyer sur mes compétences non seulement en matière de développement web, mais également en web design.
+						Ainsi, j’ai jusqu’ici utilisé les langages HTML, CSS, PHP et JavaScript afin de réaliser mes tâches de développement web. Il ne s’agit cependant pas que de coder <em>from scratch</em>, car j’ai également besoin de mettre à profit mes connaissances en développement sur WordPress et certains de ses outils, que je détaille dans la partie « Tâches réalisées ».
+						En ce qui concerne l’aspect web design, je me sers principalement des outils avec lesquels je suis le plus à l’aise, à savoir Adobe Photoshop et Adobe Illustrator, mais j’ai toutefois eu l’occasion lors de ces trois premières semaines de stage de prendre en main l’outil de prototypage Figma.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="content analyse-du-besoin">
+			<!--Block 1-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-info"></i>
+					<h2>Analyse de l'existant</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						L’évolution exponentielle d’Internet a engendré un besoin de communiquer l’information le plus efficacement possible et de manière personnalisée. Il existe donc actuellement de nombreuses solutions permettant de créer un site web, allant des plus simples, comme le constructeur de sites web Wix, aux plus complexes qui nécessitent de coder soi-même son site web.
+					</p>
+					<p>
+						Les différentes méthodes employées dans le cadre de la création de sites web sont les suivantes, classées de la plus facile aux plus complexes :
+					</p>
+					<ul>
+						<li>Les constructeurs de sites web représentent aujourd’hui la méthode la plus simple d’utilisation pour la création de sites car ils n’exigent aucune connaissance de programmation de la part des utilisateurs. Ils sont généralement munis d’interfaces drag-and-drop (glisser-déposer) et de modèles préconçus facilitant et accélérant le processus de construction.</li>
+						<li>Les CMS (<em>Content Management Systems</em> ou systèmes de gestion de contenu) tel WordPress sont, comme leur nom l’indique, des plateformes permettant de stocker, publier, modifier et supprimer du contenu dans une base de données. Ils sont plus personnalisables que l’option plus simple et directe que représentent les constructeurs de sites. Les modèles préconçus et plugins (extensions) qu’ils proposent peuvent nécessiter quelques connaissances en matière de programmation, mais ils restent tout de même une manière très simple de construire un site web.</li>
+						<li>Le codage <em>from scratch</em> d’un site web est la méthode qui nécessite le plus de connaissances de programmation de la part de l’utilisateur. Ces connaissances peuvent être des compétences élémentaires en HTML et CSS si le site créé se veut simple. Cependant, la création de sites plus complexes peut faire intervenir d’autres langages de programmation tels JavaScript et PHP, qui exigent un certain niveau d’expertise technique. Bien que plus chronophage et exigeante, cette méthode permet d’avoir un contrôle complet sur le design et les fonctionnalités du site. À ce niveau, il devient également intéressant d’utiliser des frameworks (React, Angular, Vue.js, Symfony, etc.) pour créer des sites web fiables et flexibles.</li>
+					</ul>
+				</div>
+			</div>
+            <!--Block 2-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-flag-alt"></i>
+					<h2>Besoin d’évolution et objectifs à atteindre</h2>
+				</div>
+				<div class="block-content">
+					<p>Ces méthodes et outils se sont développés au fil du temps pour répondre aux différents besoins d’évolution ayant apparu.</p>
+					<p>
+						À l’émergence d’Internet, les sites étaient principalement statiques et construits au moyen d’un simple code HTML accompagné de CSS car ils ne comportaient généralement que du texte et de simples images. Les besoins des utilisateurs ayant évolué au fil du temps, ils ont dû évoluer à leur tour afin de répondre à ces besoins. Ainsi, la nécessité de construire des sites dynamiques, <em>responsive</em> et interactifs a engendré l’apparition des outils et méthodes listés plus haut. Toutes ces évolutions, allant des langages de programmation tel JavaScript aux CMS et frameworks,  ont permis d’améliorer l’expérience utilisateur, d’augmenter la fonctionnalité et la flexibilité des sites et d’en améliorer la performance et la sécurité.
+					</p>
+					<p>
+						À ces besoins s’ajouteront de nouveaux aspects à prendre en compte dans la création de sites web. Le futur proche et lointain de ce domaine pourrait être formé autour de technologies comme l’intelligence artificielle, la réalité virtuelle ou bien encore les PWA (<em>Progressive Web Applications</em> ou applications web progressives).
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="content veille">
+			<!--Block 1-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-computer"></i>
+					<h2>Veille technologique</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						WordPress étant la solution choisie par mon entreprise, je focaliserai ma veille technologique sur les CMS et constructeurs de sites. J’ai pour cela choisi de comparer 10 des CMS les plus populaires, à savoir WordPress, Shopify, Wix, Squarespace, Joomla!, Drupal, Prestashop, Magento (Adobe Commerce), Contentful et Webflow.
+					</p>
+					<p>
+						Les résultats de cette veille sont accessibles <a target="_blank" href="assets/images/veille_technologique.png">ici</a>.
+					</p>
+				</div>
+			</div>
+            <!--Block 2-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-check-mark"></i>
+					<h2>Recommandations</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						Joomla! est un bon compromis qui rassemble des fonctionnalités reliées au design et d’autres affectant la performance globale du site. Ce CMS propose des offres peu onéreuses et une gamme conséquente de thèmes, templates et plugins prêts à l’utilisation. Bien qu’il soit légèrement plus difficile à prendre en main que d’autres CMS très prisés tel WordPress, il permet de créer des sites web de plus large envergure, que ce soit des sites e-commerce ou autres.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="content planning">
+			<!--Block 1-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-calendar"></i>
+					<h2>Planning du travail réalisé</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						Le planning des tâches que j'ai réalisées au cours de mes 8 semaines de stage est visible ci-dessous. Cliquez sur les images pour les agrandir.
+					</p>
+					<a target="_blank" href="assets/images/03-mars.png"><img alt="Planning - Mars" src="assets/images/03-mars.png"></a>
+					<a target="_blank" href="assets/images/04-avril.png"><img alt="Planning - Avril" src="assets/images/04-avril.png"></a>
+					<a target="_blank" href="assets/images/05-mai.png"><img alt="Planning - Mai" src="assets/images/05-mai.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="content analyse">
+			<!--Block 1-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-like"></i>
+					<h2>Points forts</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						J'ai pu au cours de mes 8 semaines de stage effectuer un grand nombre de tâches et apporter mon aide et expertise à l'entreprise, que ce soit dans le domaine du webdesign (mon maître de stage et son co-gérant ne savaient par exemple pas bien maîtriser Figma) ou bien du développement web.
+					</p>
+					<p>
+						Mes compétences en HTML et CSS, en particulier, m'ont en effet non seulement permis de travailler sur les projets m'ayant été attribués, mais également de venir en aide à mon maître de stage de manière plus spontanée. J'ai par exemple pu régler les problèmes qu'il a rencontrés lors de la création d'une section sur la page « L'équipe » de Form.dev, ou bien encore l'assister sur les corrections des 23 pages des communes du site du Pays d'Opale.
+					</p>
+					<hr>
+					<p>
+						La maquette graphique que j'ai réalisée en réponse à l'appel d'offres de Xlim a également permis de valoriser la candidature de l'entreprise. En effet, Crimson Factory a fait partie des 2 entreprises sélectionnées pour un entretien avec les responsables de la refonte du site internet de Xlim. Suite à ce rendez-vous, il s'est avéré que le seul doute qu'ils avaient quant à notre candidature résidait dans l'ancienneté et la taille de Crimson Factory.
+					</p>
+					<hr>
+					<p>
+						J'ai aussi pu réaliser toutes sortes de tâches nécessitant certaines connaissances dans le domaine du développement web que Crimson Factory ne possédait pas. Je les ai ainsi dépannés sur des problèmes mineurs comme la fonctionnalité du site PearL, mais aussi sur des projets plus importants comme Form.dev (configurateur de formules) et Pays d'Opale (menu multilingue et redirection d'URL). J'ai pu produire des codes fonctionnels dans des délais relativement courts, ce qui nous a permis d'obtenir des retours clients le plus rapidement possible afin de passer directement à la suite du projet. Le configurateur de Form.dev ne sera sans doute pas amené à être modifié par mon maître de stage ou son associé dans un futur proche, mais en ce qui concerne le menu multilingue du Pays d'Opale, j'ai fait en sorte que ce dernier soit facilement modifiable (dans le cas d'un rajout potentiel de pages sur le site par exemple) même pour quelqu'un ne maîtrisant que peu voire pas PHP.
+					</p>
+					<hr>
+					<p>
+						Concernant les travaux d'intégration web que j'ai réalisés, que ce soit en codant <em>from scratch</em> ou bien à l'aide de Divi, j'ai su reproduire les maquettes graphiques le plus fidèlement possible. Cela a notamment amené mon maître de stage à me demander de corriger les travaux des précédents stagiaires (homepage du Pays d'Opale, pages des communes, etc.) dans le but d'obtenir un rendu d'encore meilleure qualité.
+					</p>
+				</div>
+			</div>
+			<!--Block 2-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-pencil"></i>
+					<h2>Points d'amélioration et actions correctives</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						Un point qui aurait mérité d'être amélioré lors de la réalisation de mes tâches est le commentaire de mes codes. J'ai commenté mes codes de manière assez modérée car je savais que ni mon maître de stage, ni son associé n'allaient être amenés à les modifier. J'aurais cependant pu commenter mon code de manière encore plus détaillée, ne serait-ce que pour moi-même, lorsque je serai amenée à finir de coder tout cela plus tard (comme il en sera le cas pour le configurateur de Form.dev).
+					</p>
+					<hr>
+					<p>
+						La maquette graphique que j'ai réalisée pour Xlim aurait également pu bénéficier de quelques améliorations. N'ayant jamais pris en main l'outil de webdesign Figma, je n'avais encore aucun repère sur l'interface, et bien qu'ayant eu l'occasion de me familiariser avec les bases de cet outil au cours de la conception de cette maquette, il reste encore bien des fonctionnalités et astuces dont je n'ai pas encore connaissance. N'ayant passé que quelques jours à réaliser cette maquette, cela n'a sans doute pas été suffisant pour produire un rendu 100 % satisfaisant, notamment en ce qui concerne les animations au survol.
+						Cependant, je disposais de délais à respecter et mon maître de stage souhaitait envoyer notre candidature à l'appel d'offres sans tarder. Cela a donc sans doute quelque peu compromis la qualité et la fluidité du rendu final, bien qu'invisible à l'œil moins averti des clients potentiels (Xlim).
+					</p>
+					<hr>
+					<p>
+						J'ai également rencontré un autre problème lors du codage du CSS additionnel pour le site du Pays d'Opale. Il s'agissait d'ajouter du CSS à certains éléments des pages afin de rendre les clients autonomes quant à la modification et à l'ajout de contenu sur leur site une fois celui-ci mis en ligne (en rendant les photos automatiquement rondes peu importe le ratio de l'image téléversée par exemple). Cependant, Divi (le constructeur de pages utilisé par Crimson Factory) n'est pas adapté à ce genre de pratiques car son système d'imbrication des <span class="code">&#60;div&#62;</span> rend bien trop complexe l'application de styles à l'élément désiré (surtout si on rajoute à cela toutes les déclinaisons de couleurs présentes sur le site du Pays d'Opale). Au final, mon maître de stage a décidé de demander aux clients de téléverser leurs images en ratio 1:1 afin d'éviter toute complication.
+					</p>
+					<p>
+						Si j'avais su que le morceau de CSS que j'avais codé pour la première instance de cette problématique allait devoir être réutilisé à multiples reprises sur l'ensemble des pages du site, je m'y serais prise autrement afin de leur fournir un code plus durable et pouvant être réutilisé autant de fois qu'ils le souhaiteraient dans toutes les déclinaisons de leur choix.
+					</p>
+				</div>
+			</div>
+			<!--Block 3-->
+			<div class="block">
+				<div class="block-header">
+					<i class="cp cp-clipboard"></i>
+					<h2>Bilan personnel</h2>
+				</div>
+				<div class="block-content">
+					<p>
+						Je suis ressortie de ce stage avec un certain nombre de nouvelles compétences que j'ai pu acquérir tout au long de mes 8 semaines de travail auprès de mon maître de stage et de son entreprise.
+					</p>
+					<p>
+						J'ai pu apprendre à prendre en main Figma et InDesign, ce qui me servira sans aucun doute pour la suite de mon parcours. Bien qu'une bonne part du travail de nature graphique que j'ai réalisé fût assez répétitive (création des pages internes du site du Pays d'Opale en suivant le thème des autres pages du site et sa charte graphique déjà établie), d'autres projets comme l'appel d'offres de Xlim ou bien encore les homepages d'HOMKiA m'ont donné l'occasion de créer plusieurs maquettes et pages d'accueil de sites, me permettant ainsi d'améliorer mes compétences en webdesign.
+					</p>
+					<p>
+						Concernant la partie de mon stage orientée sur le développement web, c'est surtout le travail effectué sur le site PearL qui m'a permis de découvrir un aspect de WordPress auquel je n'avais jamais touché auparavant, à savoir les <em>hooks</em> et le fonctionnement général des fichiers du noyau WordPress et de ses extensions. Le système de shortcode est une autre facette de WordPress qui m'était inconnue et que j'ai pu découvrir et mettre moi-même en œuvre au cours de mon stage en codant le configurateur de Form.dev. WordPress étant un outil grandement utilisé, toutes ces connaissances ne pourront que m'être utiles dans le futur.
+					</p>
+					<p>
+						Enfin et surtout, j'ai pu remarquer tout au long de mon stage l'importance des relations clients dans l'aboutissement des projets. Naturellement, il est par essence compliqué pour un développeur (et/ou designer) et un chef de projet (ou la personne en charge du projet côté client) n'étant pas familiarisé avec le processus de création de sites web de communiquer de manière claire et précise. Pour des projets de petite envergure, cela n'a pas forcément de grande répercussion. Si les clients valident les maquettes graphiques sans les regarder pour ensuite demander toutes sortes de changements au niveau du design de leur site, cela retarde certes le processus de création et d'intégration, mais il ne s'agit au final que d'ajustements sans grande importance. Il appartient aux clients de choisir ce à quoi ils souhaitent que leur site ressemble et nous devons nous adapter et répondre au mieux à leurs besoins. Cependant, pour des projets plus complexes comme le configurateur de Form.dev, si les clients ne sont pas capables de formuler clairement leurs besoins et attentes, il devient alors compliqué pour le développeur de fournir un rendu de qualité.
+					</p>
+					<p>
+						Je reste malgré tout assez satisfaite de mon stage. Sa durée plus longue, comparé à celui de l'année dernière, m'a permis d'en apprendre encore plus sur la manière dont les projets sont menés par une entreprise telle que Crimson Factory et cela m'a donc donné une vue globale sur le processus de création de sites web. Je reste fixée sur l'aspect front-end du développement web, car c'est celui qui me plaît et convient le plus, mais j'ai tout de même grandement apprécié toucher à différents aspects de la création de sites, allant de la conception de maquettes graphiques à l'intégration tout en passant par le développement de fonctionnalités plus complexes. Cette expérience et les nouvelles compétences que j'ai acquises ne me seront que favorables pour la suite de mon parcours.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--Bottom right buttons-->
+		<div id="back-to-top">
+			<a href="#top" id="btt-tippy"><i class='cp cp-chevron-up'></i></a>
+		</div>
+	</body>
+</html>
